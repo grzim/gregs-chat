@@ -1,0 +1,21 @@
+@import "../../../../variables";
+
+.input-panel-container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  .message-text {
+    flex: 3;
+    font-family: $input-font-family;
+    font-size: $text-big;
+    padding: $space-regular;
+  }
+
+  .message-submit {
+    flex: 1;
+    font-size: $text-big;
+    font-family: $button-font-family;
+    background:$send-btn-bg-color;
+    color:$send-btn-color;
+  }
+}

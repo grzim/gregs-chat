@@ -1,0 +1,39 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest tests/chat.test.js"
+  },
+  "browserslist": [
+    "last 1 Chrome version",
+    "last 1 FireFox version"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
+  "author": "GrziM",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.7",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.2.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5",
+    "sass": "^1.26.10"
+  }
+}

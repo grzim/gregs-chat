@@ -1,0 +1,57 @@
+Greg’s chat
+
+Simple chat created with React + React hooks and Node.js + socketIO on the beck and.
+Each message sent is displayed on a user’s screen with awaiting status, once it is propagated to other users (via WebSocket) it changes it status to sent. A little delay on the BE is added to show this behavior.
+Messages can contain image urls that are rendered inside message bubbles.
+Users can set the chat to display messages in 12h/24h format, send messages on ctr/command + Enter and change their user names. The user name change is propagated to other users when a user finishes typing new user name (input with debounce).
+All settings are saved to and restored from local storage.
+Stylings is done with scss. The app is responsive and fits both desktops and mobiles.
+
+Q.A.
+
+Q: Why getting a user ID is implemented as POST and not GET?
+A: Calling for user ID is not idempotent. POST is the only HTTP verb that can be idempotent.
+
+Q: Why messages are sent and received not immediately?
+A: I have implemented a little lag in order to show the feature of message sync.
+
+Q: What is the general structure of FE?
+A: Component files are in a hierarchical structure. Each component folder has its own js file and scss file. Inside a component folder, there can be another component folders when they are direct children. Component carries only view logic. Business logic is derived and kept inside hooks. All the transformation logic is derived and kept in /helpers/*.js
+
+Setup:
+clone git repo
+in project’s folder run command: npm install
+in /server folder run command: npm install
+in /server folder run command:  node index.js
+in project’s folder run command: npm run dev
+in case of problems with parcel install it globally: npm install -g parcel
+
+To run tests:
+make sure you have jest installed globally
+in project’s folder run command: npm run test
+
+
+
+Features:
+
+[x] Component-based architecture
+[x] Long messages/words broken to separate lines so the message bubble will not exceed the view screen
+[x] Images display, also when their urls include ‘?’
+[x] Modal window for settings
+[x] State management with hooks to carry information about messages and settings
+[x] Username change from settings modal
+[x] Settings connected with localStorage
+[x] Restore default settings option
+[x] Functionality to send messages on ctr/command + enter
+[x] Node server with socket.io
+[x] Socket handling
+[x] REST API implementation
+[x] Fetching message history on app start
+[x] Real-time communication
+[x] Message status display (awaiting, sent)
+[x] User name change as user types a new name (with a debounce)
+[x] Error handling
+[x] Implement a mechanism to always show the most recent message on any new action like a new message delivered, message sent
+[x] Cool styling
+[x] User stories for BDD
+[x] Fraction of tests implemented

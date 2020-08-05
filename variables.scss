@@ -1,0 +1,38 @@
+$main-color: #ffffff;
+$secondary-color: #96dfff;
+$main-opposite-color: black;
+$accent-color: #ca1200;
+$light-gh-color: #ffffff;;
+$less-important: silver;
+$secondary-opposite-color: #e3e3e3;
+$primary-font-family: 'Roboto', sans-serif;
+$secondary-font-family: monospace;
+
+$button-font-family: $primary-font-family;
+$input-font-family: $primary-font-family;
+$app-name-font-family: $primary-font-family;
+$settings-font-family: $primary-font-family;
+$messages-font-family: $secondary-font-family;
+
+$space-regular: 6px;
+$text-small: 16px;
+$text-big: 24px;
+$text-vbig: 32px;
+
+$border: silver solid 1px;
+$bubble-shadow-filter: drop-shadow(1px 1px 2px grey);
+$bubble-me-text-color: $main-opposite-color;
+$bubble-me-bg-color: $secondary-color;
+$bubble-other-text-color: $main-opposite-color;
+$bubble-other-bg-color: $secondary-opposite-color;
+$messages-container-bg-color: $light-gh-color;
+$top-bar-bg-color: $main-opposite-color;
+$top-bar-text-color: $main-color;
+$send-btn-color: $main-color;
+$send-btn-bg-color: $accent-color;
+
+$phone: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+
+

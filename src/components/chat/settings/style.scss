@@ -1,0 +1,31 @@
+@import "../../../../variables";
+
+.settings-container {
+  font-family: $settings-font-family;
+  font-size: $text-big;
+  * {
+    padding: 2*$space-regular;
+  }
+  input {
+    margin-right: 2*$space-regular;
+  }
+  .reset-to-default {
+    cursor: pointer;
+    text-align: center;
+    color: $less-important;
+  }
+  .invalid-alias {
+    font-size: $text-small;
+    color: $accent-color;
+  }
+  .alias-input{
+    outline: none;
+    font-size: $text-big;
+    padding: 0 0 0 $space-regular ;
+    margin-left: 6 * $space-regular;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+  }
+}

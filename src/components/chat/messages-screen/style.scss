@@ -1,0 +1,13 @@
+@import '../../../../variables';
+
+.message-screen-container {
+  padding: $space-regular;
+  font-family: $messages-font-family;
+  flex: 10;
+  max-height: 100%;
+  overflow: auto;
+  background: $messages-container-bg-color;
+  .bottom-line {
+    visibility: hidden;
+  }
+}

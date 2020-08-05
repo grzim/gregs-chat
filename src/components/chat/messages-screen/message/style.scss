@@ -1,0 +1,88 @@
+@import "../../../../../variables";
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  &.author-you {
+    align-items: flex-start;
+    margin-left: $space-regular;
+  }
+  &.author-me {
+    align-items: flex-end;
+    position: relative;
+    text-align: right;
+  }
+  .wrapper {
+    max-width: 95%;
+    word-break: break-all;
+
+    .is-synched {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .message-top-panel {
+    display: flex;
+    align-content: space-evenly;
+  }
+
+  .message-top-panel > * {
+    width: 100%;
+  }
+
+  .bubble {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: $text-small;
+    position: relative;
+    clear: both;
+    margin-bottom: $space-regular;
+    padding: 13px 14px;
+    vertical-align: top;
+    border-radius: $space-regular;;
+
+    margin-right: 2*$space-regular;
+    margin-top: $space-regular;;
+    filter: $bubble-shadow-filter;
+
+    &:before {
+      position: absolute;
+      top: 19px;
+      display: block;
+      width: 8px;
+      height: 6px;
+      content: "\00a0";
+      transform: rotate(29deg) skew(-35deg);
+    }
+
+    &.you {
+      float: left;
+      color: $bubble-other-text-color;
+      background-color: $bubble-other-bg-color;
+      align-self: flex-start;
+      align-items: baseline;
+      &:before {
+        left: -3px;
+        background-color: $bubble-other-bg-color;
+      }
+    }
+
+    &.me {
+      float: right;
+      color: $bubble-me-text-color;
+      background-color: $bubble-me-bg-color;
+      align-self: flex-end;
+
+      &:before {
+        right: -3px;
+        background-color: $bubble-me-bg-color;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+}
+
