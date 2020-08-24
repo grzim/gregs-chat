@@ -10,7 +10,7 @@ Stylings is done with scss. The app is responsive and fits both desktops and mob
 Q.A.
 
 Q: Why getting a user ID is implemented as POST and not GET?
-A: Calling for user ID is not idempotent. POST is the only HTTP verb that can be idempotent.
+A: Calling for user ID is not idempotent. POST is the only HTTP verb that is not idempotent.
 
 Q: Why messages are sent and received not immediately?
 A: I have implemented a little lag in order to show the feature of message sync.
